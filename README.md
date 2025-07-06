@@ -30,27 +30,6 @@ Key Features:
 | Notebook       | Google Colab     |
 | Documentation  | Markdown, Mermaid |
 
----
-
-##  Architecture Diagram
-
-```mermaid
-flowchart TD
-    A[Raw Dataset (CSV)] --> B[Streaming Simulator (Pathway)]
-    B --> C[Feature Extraction]
-    C --> D[Pricing Models]
-    D --> E1[Baseline Model]
-    D --> E2[Demand-Based Model]
-    D --> E3[Competitive Model]
-    E1 --> F[Price Output]
-    E2 --> F
-    E3 --> F
-    F --> G[Live Dashboard (Bokeh)]
-    F --> H[Suggested Rerouting]
-```
-
----
-
 ##  Project Workflow
 
 1. **Data Ingestion:**  
